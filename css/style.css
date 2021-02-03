@@ -1,0 +1,316 @@
+/* Подключение шрифтов &display=swap &subset=cyrillic-ext*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,italic,700&display=swap');
+@font-face {
+    font-family: 'Futura TS';
+    src: url('../fonts/FuturaTS-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FuturaTS-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Futura TS Condensed';
+    src: url('../fonts/FuturaTSCondensed-Light.woff2') format('woff2'),
+        url('../fonts/FuturaTSCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+/* Обнуляющий стиль */
+*,
+*::before, 
+*::after{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body{
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+/* Стили */
+/* Отдельные блоки */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.button {
+	padding: 9px 35px;
+	width: 108px;
+	height: 40px;
+	border: 1px solid black;
+	background-color: #ff9b51;
+}
+.md {
+	margin-left: -5px;
+}
+/* text-block start*/
+.text-block {
+	text-align: center;
+}
+.text-block__title {
+	font-size: 32px;
+	line-height: 140%;
+	font-weight: 700;
+	margin-bottom: 35px;
+	text-transform: capitalize;
+	text-decoration: underline #ff9b51;
+}
+.text-block__title span {
+	color: #ff9b51;
+}
+.text-block__text {
+	font-family: 'Futura TS Condensed';
+	font-size: 22px;
+}
+/* text-block end! */
+.ico {
+	margin: -13.5px 0 0 -12.5px;
+	width: 50px;
+	height: 50px;
+}
+.title-names {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 140%;
+	text-transform: capitalize;
+}
+/* ОСНОВНЫЕ БЛОКИ СТИЛЕЙ */
+/* HEADER start */
+.header {
+	background-color: black;
+	margin-bottom: 100px;
+}
+.header__block {
+	padding: 30px 30px;
+}
+.block-header__logo {
+	display: inline-block;
+}
+.block-header__menu {
+	margin-left: 50%;
+}
+.menu-header {
+	display: inline-block;
+}
+.menu-header li{
+	display: inline-block;
+	margin-left: 45px;
+}
+.menu-header__link {
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.69;
+}
+/* MAIN start */
+/* Bacic start */
+.basic {
+	margin-bottom: 115px;
+}
+.basic__block {
+	margin-bottom: 70px;
+}
+.basic__title {
+	display: inline-block;
+	margin-right: 50px;
+}
+.basic__text {
+	display: inline-block;
+	max-width: 500px;
+}
+.basic__title h1{
+	font-family: 'Futura TS';
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.basic__title h1 span{
+	color: #ff9b51;
+}
+.basic__text p{
+	font-family: 'Futura TS Condensed';
+	font-size: 18px;
+}
+.basic__button {
+	margin: 0 auto;
+	text-align: center;
+}
+.button__link {
+	display: block;
+	line-height: 18px;
+	color: #fff;
+}
+/* Cover start */
+.cover__img {
+	width: 50%;
+	height: 500px;
+}
+/* Section start */
+.section {
+	margin-bottom: 50px;
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+.section__block {
+	padding-top: 50px;
+	margin-bottom: 40px;
+}
+.section__info {
+	padding-bottom: 40px;
+}
+.section-info__title {
+	margin-bottom: 15px;
+}
+.section-info__title h3{
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.section-info__text {
+	text-align: right;
+	margin-bottom: 35px;
+	background-color: black;
+}
+.section-info__text p{
+	font-size: 14px;
+	font-style: italic;
+	line-height: 28px;
+	color: #fff;
+}
+.section-info__button {
+	margin: 0 auto;
+}
+/* Scetch start */
+.scetch__block {
+	margin-bottom: 65px;
+}
+.news {
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ 	background-blend-mode: multiply,multiply;
+	padding: 10px 15px;
+	border: 2px solid #ff9b51;
+	border-radius: 6px;
+	margin: 0 auto;
+	max-width: 400px;
+}
+.news__title {
+	padding-top: 20px;
+	margin-bottom: 35px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 108%;
+}
+.news__info p{
+	max-height: 270px;
+	overflow: auto;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.705);
+}
+/* Footer start */
+.footer {
+	padding: 50px 0;
+	background-color: #2d2d44;
+	color: #fff;
+}
+.footer__name {
+	padding-right: 5px;
+	display: inline-block;
+}
+.footer__feedback {
+	padding-left: 5px;
+	display: inline-block;
+	text-align: right;
+}
+.footer__contacts {
+	padding: 5px;
+	text-align: center;
+}
+
+
+
+
+
+.footer__logo {
+}
+.footer__logo a{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+}
+.footer__logo img{
+	margin: -27.5px 0 0 -26.5px;
+	width: 105px;
+	height: 105px;
+}
+.footer__title h4 span{
+	color: #ff9b51;;
+}
+.footer__title h4 {
+	margin-bottom: 15px;
+	font-size: 24px;
+	line-height: 28px;
+}
+.feedback-footer {
+}
+.feedback-footer__title {
+	margin-bottom: 10px;
+}
+.feedback-footer__logo a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+}
+.feedback-footer__logo img{
+	margin: -14.5px 0 0 -12.5px;
+	width: 50px;
+	height: 50px;
+}
+.contacts-footer {
+}
+.contacts-footer__block {
+	display: inline-block;
+	min-width: 33.333%;
+}
+.contacts-footer__link-ico{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+}
+.contacts-footer__link {
+	margin-bottom: 5px;
+	display: block;
+	font-size: 14px;
+	line-height: 160%;
+	color: #fff;
+}
+.contacts-footer__wrapper {
+	margin-bottom: 15px;
+}
+.footer__wrapper {
+}
