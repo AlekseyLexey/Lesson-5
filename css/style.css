@@ -154,11 +154,9 @@ body{
 	font-family: 'Futura TS Condensed';
 	font-size: 18px;
 }
-.basic__button {
+.button__link {
 	margin: 0 auto;
 	text-align: center;
-}
-.button__link {
 	display: block;
 	line-height: 18px;
 	color: #fff;
@@ -198,9 +196,6 @@ body{
 	font-style: italic;
 	line-height: 28px;
 	color: #fff;
-}
-.section-info__button {
-	margin: 0 auto;
 }
 /* Scetch start */
 .scetch__block {
