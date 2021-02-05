@@ -58,11 +58,16 @@ body{
 	margin: 0 auto;
 }
 .button {
+	display: block;
 	padding: 9px 35px;
 	width: 108px;
 	height: 40px;
+	margin: 0 auto;
 	border: 1px solid black;
 	background-color: #ff9b51;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
 }
 .md {
 	margin-left: -5px;
@@ -153,13 +158,6 @@ body{
 .basic__text p{
 	font-family: 'Futura TS Condensed';
 	font-size: 18px;
-}
-.button__link {
-	margin: 0 auto;
-	text-align: center;
-	display: block;
-	line-height: 18px;
-	color: #fff;
 }
 /* Cover start */
 .cover__img {
